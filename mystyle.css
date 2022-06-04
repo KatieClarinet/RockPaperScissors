@@ -1,0 +1,91 @@
+body {
+    width: 100vw;
+    height: auto;
+}
+
+
+#Rock {
+    background-image: url(
+        "https://live.staticflickr.com/65535/52122263860_463d1f95f0_w.jpg");
+    background-size: cover;
+    width: 178px;
+    height: 200px; 
+    border: none;
+}
+#Paper {
+    background-image: url(
+        "https://live.staticflickr.com/65535/52121795823_7d73449eab_w.jpg");
+    background-size: cover;
+    width: 168px;
+    height: 200px; 
+    font-size: 2rem;
+    border: none;
+}
+
+#Scissors {
+    background-image: url(
+        "https://live.staticflickr.com/65535/52122007819_0a5a3a107e_w.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 176px; 
+    font-size: 2rem;
+    border: none;
+}
+#Lizard {
+    background-image: url(
+        "https://live.staticflickr.com/65535/52121795833_63fe69459e_w.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 146px; 
+    font-size: 2rem;
+    border: none;
+}
+
+#Spock {
+    background-image: url(
+        "https://live.staticflickr.com/65535/52122263950_4df5a4c713_w.jpg");
+    background-size: cover;
+    width: 190px;
+    height: 200px; 
+    font-size: 2rem;
+    border: none;
+}
+
+button:hover {
+    transform: scale(1.15);
+  }
+
+  #buttons {  
+      display: flex;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      margin-top: 15vh;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+     
+  }
+
+
+  #Results {
+    background-color: #cce1de;
+    color: #5f7783;
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #Scores {
+    background-color: #cce1de;
+    color: #5f7783;
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+

@@ -31,6 +31,15 @@ function generateComputerChoice() {
     if (randomNumber === 3) {
         computerChoice = 'Paper';
     }
+
+    if (randomNumber === 4) {
+        computerChoice = 'Lizard';
+    }
+
+    if (randomNumber === 5) {
+        computerChoice = 'Spock';
+    }
+
     computerChoiceDisplay.innerHTML = computerChoice;
     getResult();
 }
@@ -39,10 +48,10 @@ function getResult() {
     if (computerChoice === userChoice) {
     result = 'its a draw!'
     userDraw++
-} if (computerChoice === 'Rock' && userChoice === 'Scissors' || computerChoice === 'Scissors' && userChoice === 'Paper' || computerChoice === 'Paper' && userChoice === 'Rock') {
+} if (computerChoice === 'Rock' && userChoice === 'Scissors' || computerChoice === 'Scissors' && userChoice === 'Paper' || computerChoice === 'Paper' && userChoice === 'Rock' || computerChoice === 'Lizard' && userChoice === 'Paper' || computerChoice === 'Scissors' && userChoice === 'Lizard' || computerChoice === 'Rock' && userChoice === 'Lizard' || computerChoice === 'Spock' && userChoice === 'Scissors' || computerChoice === 'Spock' && userChoice === 'Rock' || computerChoice === 'Paper' && userChoice === 'Spock' || computerChoice === 'Lizard' && userChoice === 'Spock') {
     result = 'you lose!'
     userLoss++
-} if (computerChoice === 'Scissors' && userChoice === 'Rock' || computerChoice === 'Paper' && userChoice === 'Scissors' || computerChoice === 'Rock' && userChoice === 'Paper') {
+} if (computerChoice === 'Scissors' && userChoice === 'Rock' || computerChoice === 'Paper' && userChoice === 'Scissors' || computerChoice === 'Rock' && userChoice === 'Paper' || computerChoice === 'Paper' && userChoice === 'Lizard' || computerChoice === 'Lizard' && userChoice === 'Scissors' || computerChoice === 'Lizard' && userChoice === 'Rock' || computerChoice === 'Scissors' && userChoice === 'Spock' || computerChoice === 'Rock' && userChoice === 'Spock' || computerChoice === 'Spock' && userChoice === 'Paper' || computerChoice === 'Spock' && userChoice === 'Lizard') {
     result = 'you win!'
     userWin++
 }
